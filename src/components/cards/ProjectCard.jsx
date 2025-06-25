@@ -58,14 +58,6 @@ const Name = styled.div`
   }
 `;
 
-const Category = styled.div`
-  color: ${({ theme }) => theme.text_primary}CC;
-
-  @media (max-width: 768px) {
-    font-size: 12px;
-  }
-`;
-
 const Date = styled.div`
   font-size: 14px;
   font-weight: 500;

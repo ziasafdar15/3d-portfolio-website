@@ -167,7 +167,6 @@ export const Bio = {
     },
     {
       id: 1,
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY7udo5ePxJa4XmOzKhEDAv_7onzoiNwehbYisKeIVn4wnRIrSHi5MHqYOidVlpybeL7g&usqp=CAU",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCdN9nEwXGI9K3-64VKYxW0ZgEEORXmU2mjg&s",
       role: "Full-Stack Developer",
       company: "GBCS Groups - SkyIT",
