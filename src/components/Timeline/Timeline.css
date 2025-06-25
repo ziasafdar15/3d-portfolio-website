@@ -1,0 +1,44 @@
+.timeline-container {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .timeline-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 3px solid #3498db;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    left: -9px;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background-color: #3498db;
+    border-radius: 50%;
+  }
+  
+  .timeline-content {
+    margin-left: 20px;
+  }
+  
+  .timeline-year {
+    font-weight: bold;
+    color: #3498db;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
