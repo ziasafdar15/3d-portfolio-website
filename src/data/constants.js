@@ -152,20 +152,6 @@ export const Bio = {
   
   export const experiences = [
     {
-      id: 0,
-      role: "Full-Stack Developer",
-      company: "JVR Technological Solutions",
-      date: "May 2024 - Sep 2024",
-      desc: "Played a key role in the development and deployment of two web applications, leveraging JavaScript and Swift to enhance functionality and user experience. Collaborated with a team of 4 to implement SQL-based database solutions, managing a database containing over 2,000 user profiles for improved client data management.",
-      skills: [
-        "JavaScript",
-        "Swift",
-        "SQL",
-        "Web Development",
-        "Database Design",
-      ],
-    },
-    {
       id: 1,
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCdN9nEwXGI9K3-64VKYxW0ZgEEORXmU2mjg&s",
       role: "Full-Stack Developer",
@@ -178,6 +164,20 @@ export const Bio = {
         "Firebase",
         "Front-End Development",
         "Real-Time Databases",
+      ],
+    },
+    {
+      id: 0,
+      role: "Full-Stack Developer",
+      company: "JVR Technological Solutions",
+      date: "May 2024 - Sep 2024",
+      desc: "Played a key role in the development and deployment of two web applications, leveraging JavaScript and Swift to enhance functionality and user experience. Collaborated with a team of 4 to implement SQL-based database solutions, managing a database containing over 2,000 user profiles for improved client data management.",
+      skills: [
+        "JavaScript",
+        "Swift",
+        "SQL",
+        "Web Development",
+        "Database Design",
       ],
     },
   ];  
