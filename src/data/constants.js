@@ -8,7 +8,7 @@ export const Bio = {
       "I am a motivated and adaptable computer science student with hands-on experience in full-stack development, machine learning, and systems programming. Through collaborative roles on diverse, cross-functional teams, I’ve contributed to large-scale applications and data-driven projects, consistently delivering reliable, high-quality solutions. With a passion for learning and a growth mindset, I thrive in fast-paced environments where I can take on new challenges, refine my skills, and make meaningful contributions to innovative, impactful technologies.",
     github: "https://github.com/ziasafdar15",
     resume:
-      "https://drive.google.com/file/d/1EMemUDyZAWe7NH5DytKYZ3T-TpvD4VYY/view?usp=sharing",
+      "https://drive.google.com/file/d/1Mnyu2MgM9T-BkiJEIDxSjTXw8X2B_SGw/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/ziaurrehman-safdar-50a619210/",
   };
   
