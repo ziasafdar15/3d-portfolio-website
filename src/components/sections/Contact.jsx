@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import emailjs from '@emailjs/browser';
 
@@ -124,44 +124,81 @@ const ContactButton = styled.button`
 `;
 
 const Contact = () => {
-    const form = useRef();
-  
-    const handleSubmit = (e) => {
-      e.preventDefault();
-  
-      emailjs.sendForm(
-        'service_cztdqdk',
-        'template_4u2grqr',
-        form.current,
-        'co4beJyzQRnuEWfM8'
-      )
-        .then((result) => {
-          alert('Message sent successfully!');
-          form.current.reset();
-        })
-        .catch((error) => {
-          alert('Something went wrong: ' + error.text);
-        });
+  const [from_name, setFromName] = useState('');
+  const [from_email, setFromEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const serviceId = 'service_cztdqdk';
+    const templateIdForMe = 'template_1uuaqyo';
+    const publicKey = 'co4beJyzQRnuEWfM8';
+
+    const templateParamsForMe = {
+      from_name: from_name,
+      from_email: from_email,
+      subject: subject,
+      message: message,
     };
-  
-    return (
-      <Container id="Contact">
-        <Wrapper>
-          <Title>Contact</Title>
-          <Desc>
-            Please feel free to reach out to me for any questions or opportunities!
-          </Desc>
-          <ContactForm ref={form} onSubmit={handleSubmit}>
-            <ContactTitle>Email Me</ContactTitle>
-            <ContactInput type="email" placeholder="Your Email" name="from_email" required />
-            <ContactInput type="text" placeholder="Your Name" name="from_name" required />
-            <ContactInput type="text" placeholder="Subject" name="subject" />
-            <ContactTextarea placeholder="Your Message" name="message" rows={4} required />
-            <ContactButton type="submit">Send</ContactButton>
-          </ContactForm>
-        </Wrapper>
-      </Container>
-    );
+
+    emailjs.send(serviceId, templateIdForMe, templateParamsForMe, publicKey)
+      .then((response) => {
+        console.log('Email sent successfully!', response);
+        alert('Message sent successfully!');
+        setFromName('');
+        setFromEmail('');
+        setSubject('');
+        setMessage('');
+      })
+      .catch((error) => {
+        console.error('Error sending email:', error);
+        alert('Something went wrong. Please try again later.');
+      });
   };
-  
+
+  return (
+    <Container id="Contact">
+      <Wrapper>
+        <Title>Contact</Title>
+        <Desc>
+          Please feel free to reach out to me for any questions or opportunities!
+        </Desc>
+        <ContactForm onSubmit={handleSubmit}>
+          <ContactTitle>Email Me</ContactTitle>
+          <ContactInput
+            type="email"
+            placeholder="Your Email"
+            value={from_email}
+            onChange={(e) => setFromEmail(e.target.value)}
+            required
+          />
+          <ContactInput
+            type="text"
+            placeholder="Your Name"
+            value={from_name}
+            onChange={(e) => setFromName(e.target.value)}
+            required
+          />
+          <ContactInput
+            type="text"
+            placeholder="Subject"
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
+          />
+          <ContactTextarea
+            placeholder="Your Message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            rows={4}
+            required
+          />
+          <ContactButton type="submit">Send</ContactButton>
+        </ContactForm>
+      </Wrapper>
+    </Container>
+  );
+};
+
 export default Contact;
