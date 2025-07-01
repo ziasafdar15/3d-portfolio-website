@@ -196,15 +196,6 @@ export const Bio = {
   
   export const projects = [
     {
-      id: 6,
-      title: "AI Research Agent",
-      date: "Jul 2025",
-      description:
-        "Built a full-stack AI research assistant integrating LangChain, Anthropic Claude, and a Flask backend with a React frontend. Implemented modular agents for dynamic tool calling, external API queries, and structured research summaries, enabling secure, asynchronous real-time interactions.",
-      tags: ["Python", "Flask", "LangChain", "Anthropic Claude", "React", "Pydantic", "API"],
-      category: "AI/Machine Learning",
-    },
-    {
       id: 5,
       title: "3d Portfolio",
       date: "Jun 2025",
@@ -212,6 +203,15 @@ export const Bio = {
         "A dynamic, visually engaging 3D portfolio website showcasing personal projects and skills through interactive 3D graphics. Built with Java and JavaFX for smooth animations and immersive UI, featuring real-time updates and scalable architecture. Developed using Agile methodologies for iterative improvements.",
         tags: ["React", "JavaScript", "Three.js", "React Three Fiber", "Drei", "Styled-Components",],
       category: "Web App",
+    },
+    {
+      id: 6,
+      title: "AI Research Agent",
+      date: "Jul 2025",
+      description:
+        "Built an AI-powered research assistant using LangChain agents and Anthropic Claude models for natural language query handling. Integrated dynamic tool calling for data retrieval, enforced structured AI outputs with Pydantic, and executed interactions via a secure, local command-line interface.",
+      tags: ["Python", "LangChain", "Anthropic Claude", "Pydantic", "python-dotenv"],
+      category: "AI/Machine Learning",
     },
     {
       id: 0,
