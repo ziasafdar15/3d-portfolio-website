@@ -196,6 +196,15 @@ export const Bio = {
   
   export const projects = [
     {
+      id: 6,
+      title: "AI Research Agent",
+      date: "Jul 2025",
+      description:
+        "Built a full-stack AI research assistant integrating LangChain, Anthropic Claude, and a Flask backend with a React frontend. Implemented modular agents for dynamic tool calling, external API queries, and structured research summaries, enabling secure, asynchronous real-time interactions.",
+      tags: ["Python", "Flask", "LangChain", "Anthropic Claude", "React", "Pydantic", "API"],
+      category: "AI/Machine Learning",
+    },
+    {
       id: 5,
       title: "3d Portfolio",
       date: "Jun 2025",
