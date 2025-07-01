@@ -205,15 +205,6 @@ export const Bio = {
       category: "Web App",
     },
     {
-      id: 6,
-      title: "AI Research Agent",
-      date: "Jul 2025",
-      description:
-        "Built an AI-powered research assistant using LangChain agents and Anthropic Claude models for natural language query handling. Integrated dynamic tool calling for data retrieval, enforced structured AI outputs with Pydantic, and executed interactions via a secure, local command-line interface.",
-      tags: ["Python", "LangChain", "Anthropic Claude", "Pydantic", "python-dotenv"],
-      category: "AI/Machine Learning",
-    },
-    {
       id: 0,
       title: "Immigration Case Processing System",
       date: "Mar 2025",
@@ -221,6 +212,15 @@ export const Bio = {
         "A management system that enables sponsors to submit immigration forms, track case statuses, and view past submissions, while employees manage applications through a workflow table with advanced filtering, search, and approval/denial features. Ensured seamless real-time updates between database and UI.",
       tags: ["Java", "JavaFX", "SQL", "Maven", "Agile"],
       category: "Web App",
+    },
+    {
+      id: 6,
+      title: "AI Research Agent",
+      date: "Jul 2025",
+      description:
+        "Built an AI-powered research assistant using LangChain agents and Anthropic Claude models for natural language query handling. Integrated dynamic tool calling for data retrieval, enforced structured AI outputs with Pydantic, and executed interactions via a secure, local command-line interface.",
+      tags: ["Python", "LangChain", "Anthropic Claude", "Pydantic", "python-dotenv"],
+      category: "AI/Machine Learning",
     },
     {
       id: 1,
